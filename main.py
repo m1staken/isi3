@@ -27,7 +27,6 @@ def crawl(topic, n=100, out_dir="docs", url_file="doc_urls.json"):
 
     with open(url_file, "w", encoding="utf-8") as f:
         json.dump(doc_urls, f, ensure_ascii=False, indent=2)
-
     return saved
 
 tok = re.compile(r"[а-яёА-ЯЁ]+", re.I)
